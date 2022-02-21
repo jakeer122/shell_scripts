@@ -1,0 +1,56 @@
+    1  cd /
+    2  apt update -y
+    3  apt install apache2 -y
+    4  apache2 -v
+    5  systemctl status apache2
+    6  curl localhost
+    7  curl -I localhost
+    8  clear
+    9  cd /etc
+   10  ls
+   11  cd apache2
+   12  ls
+   13  vi ports.conf
+   14  systemctl restart apache2
+   15  systemctl status apache2
+   16  cd /
+   17  cd /var/www
+   18  ls
+   19  cd html
+   20  ls
+   21  cat index.html
+   22  clear
+   23  echo "<h1>jakeer</h1>" >> file.html
+   24  ls
+   25  systemctl restart apache2
+   26  systemctl status apache2
+   27  exit
+   28  cd /
+   29  systemctl status apache2
+   30  cd /var/www
+   31  ls
+   32  cd html
+   33  ls
+   34  systemctl restart apache2
+   35  clear
+   36  cd /
+   37  apt install nginx -y
+   38  systemctl enable nginx
+   39  systemctl status nginx
+   40  systemctl status apache2
+   41  netstat -nap | grep 9090
+   42  lsof -i tcp:9090
+   43  netsta -na | grep 80
+   44  netstat -na | grep 80
+   45  ps -ef | grep 80
+   46  cd /etc/apache2/
+   47  ls
+   48  vi ports.conf
+   49  lsof -i tcp:90
+   50  lsof -i tcp:80
+   51  cd /var/www/html
+   52  ls
+   53  history
+   54  cd /
+   55  history >> apache2,nginx commands.txt
+   56  history >> apache2,nginxcommands.txt
